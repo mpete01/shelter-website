@@ -28,6 +28,9 @@ export default function Home() {
     fetchAnimals();
   }, []);
 
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
+  }
 
   return (
     <div className="px-5">
@@ -36,7 +39,7 @@ export default function Home() {
         <h1 className="text-3xl font-bold">Animal Shelter</h1>
       </header>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {animals.map((animal) => (
+      {animals.map((animal) => (
           <Link href={`/animals/${animal.id}`} key={animal.id}>
             <div className="p-4 border rounded-lg shadow-lg hover:shadow-2xl transition">
               <h2 className="text-xl font-bold">{animal.name}</h2>
