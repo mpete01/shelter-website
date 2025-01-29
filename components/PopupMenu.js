@@ -9,8 +9,8 @@ export default function PopupMenu() {
   };
 
   return (
-    <div className={"relative"}>
-        <button onClick={toggleMenu} className="fixed top-4 left-4 z-50 bg-gray-800 text-white p-2 rounded-md">
+    <div className="relative bg-light-background">
+        <button onClick={toggleMenu} className="fixed left-6 z-50 bg-light-primary text-light-background p-2 rounded-md">
             <div className="space-y-1">
                 <div className="w-6 h-0.5 bg-white"></div>
                 <div className="w-6 h-0.5 bg-white"></div>
